@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B9/PHewO+y0=",
+  "dgSpecHash": "uE8tnJixsBw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\meuprimeirocrud_fabi.csproj",
+  "projectFilePath": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\meuprimeirocrud.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guerr\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
     "C:\\Users\\guerr\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",

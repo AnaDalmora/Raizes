@@ -1,42 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\",
+  "WorkspaceRootPath": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\csharp\\meuprimeirocrud\\meuprimeirocrud\\repository\\plantioinsumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\repository\\plantioinsumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\raizes\\bancodados\\meuprimeirocrud_fabi\\meuprimeirocrud\\contracts\\repository\\iplantioinsumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\contracts\\repository\\iplantioinsumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\csharp\\meuprimeirocrud\\meuprimeirocrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\raizes\\bancodados\\meuprimeirocrud_fabi\\meuprimeirocrud\\repository\\contracts\\repository\\iplantioinsumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\repository\\contracts\\repository\\iplantioinsumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\csharp\\meuprimeirocrud\\meuprimeirocrud\\infraestructure\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\infraestructure\\connection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\raizes\\bancodados\\meuprimeirocrud_fabi\\meuprimeirocrud\\repository\\contracts\\repository\\iinsumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\repository\\contracts\\repository\\iinsumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\csharp\\meuprimeirocrud\\meuprimeirocrud\\repository\\insumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\repository\\insumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\csharp\\meuprimeirocrud\\meuprimeirocrud\\contracts\\repository\\iinsumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\raizes\\bancodados\\meuprimeirocrud_fabi\\meuprimeirocrud\\contracts\\repository\\iinsumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\contracts\\repository\\iinsumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\csharp\\meuprimeirocrud\\meuprimeirocrud\\dto\\plantioinsumoinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\raizes\\bancodados\\meuprimeirocrud_fabi\\meuprimeirocrud\\repository\\plantioinsumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\repository\\plantioinsumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\raizes\\bancodados\\meuprimeirocrud_fabi\\meuprimeirocrud\\repository\\insumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\repository\\insumorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\raizes\\bancodados\\meuprimeirocrud_fabi\\meuprimeirocrud\\dto\\plantioinsumoinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\dto\\plantioinsumoinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\csharp\\meuprimeirocrud\\meuprimeirocrud\\dto\\insumoinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\dto\\insumoinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\csharp\\meuprimeirocrud\\meuprimeirocrud\\entity\\plantioinsumoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\entity\\plantioinsumoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\csharp\\meuprimeirocrud\\meuprimeirocrud\\entity\\insumoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\raizes\\bancodados\\meuprimeirocrud_fabi\\meuprimeirocrud\\entity\\insumoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\entity\\insumoentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|c:\\users\\guerr\\raizes\\bancodados\\meuprimeirocrud_fabi\\meuprimeirocrud\\dto\\insumoinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B320DFF1-1A67-434B-B9C1-16A29DF15C19}|meuprimeirocrud\\meuprimeirocrud.csproj|solutionrelative:meuprimeirocrud\\dto\\insumoinsertdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,116 +46,122 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlantioInsumoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\Repository\\PlantioInsumoRepository.cs",
-              "RelativeDocumentMoniker": "meuprimeirocrud\\Repository\\PlantioInsumoRepository.cs",
-              "ToolTip": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\Repository\\PlantioInsumoRepository.cs",
-              "RelativeToolTip": "meuprimeirocrud\\Repository\\PlantioInsumoRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAwAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IPlantioInsumoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Repository\\Contracts\\Repository\\IPlantioInsumoRepository.cs",
+              "RelativeDocumentMoniker": "meuprimeirocrud\\Repository\\Contracts\\Repository\\IPlantioInsumoRepository.cs",
+              "ToolTip": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Repository\\Contracts\\Repository\\IPlantioInsumoRepository.cs",
+              "RelativeToolTip": "meuprimeirocrud\\Repository\\Contracts\\Repository\\IPlantioInsumoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T02:25:45.445Z",
+              "WhenOpened": "2025-06-16T20:15:41.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IInsumoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Repository\\Contracts\\Repository\\IInsumoRepository.cs",
+              "RelativeDocumentMoniker": "meuprimeirocrud\\Repository\\Contracts\\Repository\\IInsumoRepository.cs",
+              "ToolTip": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Repository\\Contracts\\Repository\\IInsumoRepository.cs",
+              "RelativeToolTip": "meuprimeirocrud\\Repository\\Contracts\\Repository\\IInsumoRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T20:15:39.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IPlantioInsumoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Contracts\\Repository\\IPlantioInsumoRepository.cs",
+              "RelativeDocumentMoniker": "meuprimeirocrud\\Contracts\\Repository\\IPlantioInsumoRepository.cs",
+              "ToolTip": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Contracts\\Repository\\IPlantioInsumoRepository.cs",
+              "RelativeToolTip": "meuprimeirocrud\\Contracts\\Repository\\IPlantioInsumoRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T20:15:20.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IInsumoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Contracts\\Repository\\IInsumoRepository.cs",
+              "RelativeDocumentMoniker": "meuprimeirocrud\\Contracts\\Repository\\IInsumoRepository.cs",
+              "ToolTip": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Contracts\\Repository\\IInsumoRepository.cs",
+              "RelativeToolTip": "meuprimeirocrud\\Contracts\\Repository\\IInsumoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T12:01:56.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlantioInsumoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Repository\\PlantioInsumoRepository.cs",
+              "RelativeDocumentMoniker": "meuprimeirocrud\\Repository\\PlantioInsumoRepository.cs",
+              "ToolTip": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Repository\\PlantioInsumoRepository.cs",
+              "RelativeToolTip": "meuprimeirocrud\\Repository\\PlantioInsumoRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T12:41:44.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PlantioInsumoInsertDTO.cs",
-              "DocumentMoniker": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\DTO\\PlantioInsumoInsertDTO.cs",
-              "RelativeDocumentMoniker": "meuprimeirocrud\\DTO\\PlantioInsumoInsertDTO.cs",
-              "ToolTip": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\DTO\\PlantioInsumoInsertDTO.cs",
-              "RelativeToolTip": "meuprimeirocrud\\DTO\\PlantioInsumoInsertDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA4AAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T14:02:38.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\Program.cs",
-              "RelativeDocumentMoniker": "meuprimeirocrud\\Program.cs",
-              "ToolTip": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\Program.cs",
-              "RelativeToolTip": "meuprimeirocrud\\Program.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB0AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:28:38.176Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "InsumoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\Repository\\InsumoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Repository\\InsumoRepository.cs",
               "RelativeDocumentMoniker": "meuprimeirocrud\\Repository\\InsumoRepository.cs",
-              "ToolTip": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\Repository\\InsumoRepository.cs",
+              "ToolTip": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Repository\\InsumoRepository.cs",
               "RelativeToolTip": "meuprimeirocrud\\Repository\\InsumoRepository.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAkwEkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T13:44:29.038Z"
+              "WhenOpened": "2025-06-05T12:46:40.983Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "InsumoInsertDTO.cs",
-              "DocumentMoniker": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\DTO\\InsumoInsertDTO.cs",
-              "RelativeDocumentMoniker": "meuprimeirocrud\\DTO\\InsumoInsertDTO.cs",
-              "ToolTip": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\DTO\\InsumoInsertDTO.cs",
-              "RelativeToolTip": "meuprimeirocrud\\DTO\\InsumoInsertDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAARAAAAAAAAAA==",
+              "Title": "PlantioInsumoInsertDTO.cs",
+              "DocumentMoniker": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\DTO\\PlantioInsumoInsertDTO.cs",
+              "RelativeDocumentMoniker": "meuprimeirocrud\\DTO\\PlantioInsumoInsertDTO.cs",
+              "ToolTip": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\DTO\\PlantioInsumoInsertDTO.cs",
+              "RelativeToolTip": "meuprimeirocrud\\DTO\\PlantioInsumoInsertDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T11:27:35.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IInsumoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\Contracts\\Repository\\IInsumoRepository.cs",
-              "RelativeDocumentMoniker": "meuprimeirocrud\\Contracts\\Repository\\IInsumoRepository.cs",
-              "ToolTip": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\Contracts\\Repository\\IInsumoRepository.cs",
-              "RelativeToolTip": "meuprimeirocrud\\Contracts\\Repository\\IInsumoRepository.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAjwA4AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T12:44:32.044Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Connection.cs",
-              "DocumentMoniker": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\InfraEstructure\\Connection.cs",
-              "RelativeDocumentMoniker": "meuprimeirocrud\\InfraEstructure\\Connection.cs",
-              "ToolTip": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\InfraEstructure\\Connection.cs",
-              "RelativeToolTip": "meuprimeirocrud\\InfraEstructure\\Connection.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBgAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T12:04:22.506Z"
+              "WhenOpened": "2025-06-10T12:02:16.298Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "PlantioInsumoEntity.cs",
-              "DocumentMoniker": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\Entity\\PlantioInsumoEntity.cs",
-              "RelativeDocumentMoniker": "meuprimeirocrud\\Entity\\PlantioInsumoEntity.cs",
-              "ToolTip": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\Entity\\PlantioInsumoEntity.cs",
-              "RelativeToolTip": "meuprimeirocrud\\Entity\\PlantioInsumoEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Title": "InsumoEntity.cs",
+              "DocumentMoniker": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Entity\\InsumoEntity.cs",
+              "RelativeDocumentMoniker": "meuprimeirocrud\\Entity\\InsumoEntity.cs",
+              "ToolTip": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\Entity\\InsumoEntity.cs",
+              "RelativeToolTip": "meuprimeirocrud\\Entity\\InsumoEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T00:56:29.813Z"
+              "WhenOpened": "2025-06-05T12:46:06.541Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "InsumoEntity.cs",
-              "DocumentMoniker": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\Entity\\InsumoEntity.cs",
-              "RelativeDocumentMoniker": "meuprimeirocrud\\Entity\\InsumoEntity.cs",
-              "ToolTip": "C:\\Users\\guerr\\Csharp\\meuprimeirocrud\\meuprimeirocrud\\Entity\\InsumoEntity.cs",
-              "RelativeToolTip": "meuprimeirocrud\\Entity\\InsumoEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Title": "InsumoInsertDTO.cs",
+              "DocumentMoniker": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\DTO\\InsumoInsertDTO.cs",
+              "RelativeDocumentMoniker": "meuprimeirocrud\\DTO\\InsumoInsertDTO.cs",
+              "ToolTip": "C:\\Users\\guerr\\Raizes\\BancoDados\\meuprimeirocrud_Fabi\\meuprimeirocrud\\DTO\\InsumoInsertDTO.cs",
+              "RelativeToolTip": "meuprimeirocrud\\DTO\\InsumoInsertDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T12:35:16.381Z"
+              "WhenOpened": "2025-06-05T12:45:48.924Z"
             }
           ]
         }
