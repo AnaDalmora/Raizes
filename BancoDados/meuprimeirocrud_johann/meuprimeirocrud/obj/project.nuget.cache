@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b5TPYqwfjldsBkitkpe4do4qgss1zeeYzkBWsVU4Dr555dRSfhkLDblTPZsXFgu2gdj2SFAMQBU/nSfjyMcGsw==",
+  "dgSpecHash": "qC/ikao4tv7xZzzARpLptgpHnwBvj01YLEj3+QQ3wBnp+4W53hQe26FnzI9kpD+8QqlV/JM7yejYiojgbmumnQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\johann.rodrigues\\Desktop\\meuprimeirocrud\\MeuPrimeiroCrud\\MeuPrimeiroCrud.csproj",
+  "projectFilePath": "C:\\Users\\johann.rodrigues\\Raizes\\BancoDados\\meuprimeirocrud_johann\\MeuPrimeiroCrud\\MeuPrimeiroCrud.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johann.rodrigues\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
     "C:\\Users\\johann.rodrigues\\.nuget\\packages\\dapper\\2.1.66\\dapper.2.1.66.nupkg.sha512",

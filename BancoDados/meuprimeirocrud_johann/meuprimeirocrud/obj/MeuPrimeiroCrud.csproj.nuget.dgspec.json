@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\johann.rodrigues\\Desktop\\meuprimeirocrud\\MeuPrimeiroCrud\\MeuPrimeiroCrud.csproj": {}
+    "C:\\Users\\johann.rodrigues\\Raizes\\BancoDados\\meuprimeirocrud_johann\\MeuPrimeiroCrud\\MeuPrimeiroCrud.csproj": {}
   },
   "projects": {
-    "C:\\Users\\johann.rodrigues\\Desktop\\meuprimeirocrud\\MeuPrimeiroCrud\\MeuPrimeiroCrud.csproj": {
+    "C:\\Users\\johann.rodrigues\\Raizes\\BancoDados\\meuprimeirocrud_johann\\MeuPrimeiroCrud\\MeuPrimeiroCrud.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\johann.rodrigues\\Desktop\\meuprimeirocrud\\MeuPrimeiroCrud\\MeuPrimeiroCrud.csproj",
+        "projectUniqueName": "C:\\Users\\johann.rodrigues\\Raizes\\BancoDados\\meuprimeirocrud_johann\\MeuPrimeiroCrud\\MeuPrimeiroCrud.csproj",
         "projectName": "MeuPrimeiroCrud",
-        "projectPath": "C:\\Users\\johann.rodrigues\\Desktop\\meuprimeirocrud\\MeuPrimeiroCrud\\MeuPrimeiroCrud.csproj",
+        "projectPath": "C:\\Users\\johann.rodrigues\\Raizes\\BancoDados\\meuprimeirocrud_johann\\MeuPrimeiroCrud\\MeuPrimeiroCrud.csproj",
         "packagesPath": "C:\\Users\\johann.rodrigues\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\johann.rodrigues\\Desktop\\meuprimeirocrud\\MeuPrimeiroCrud\\obj\\",
+        "outputPath": "C:\\Users\\johann.rodrigues\\Raizes\\BancoDados\\meuprimeirocrud_johann\\MeuPrimeiroCrud\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
