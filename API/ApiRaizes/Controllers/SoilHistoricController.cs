@@ -13,9 +13,9 @@ namespace ApiRaizes.Controllers
     public class SoilHistoricController : ControllerBase
     {
         private ISoilHistoricService _service;
-        public SoilHistoricController()
+        public SoilHistoricController(ISoilHistoricService service)
         {
-            _service = new SoilHistoricService();
+            _service = service;
         }
         [HttpGet]
         public async Task<ActionResult<SoilHistoricGetAllResponse>> Get()

@@ -1,11 +1,12 @@
-﻿using ApiRaizes.DTO;
+﻿using ApiRaizes.Contracts.Services;
+using ApiRaizes.DTO;
 using ApiRaizes.Entity;
 using ApiRaizes.Repository;
 using ApiRaizes.Response;
 
 namespace ApiRaizes.Services
 {
-    public class UserService
+    public class UserService: IUserService
     {
         public async Task<MessageResponse> Delete(int id)
         {

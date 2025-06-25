@@ -13,9 +13,9 @@ namespace ApiRaizes.Controllers
     public class UserController : ControllerBase
     {
         private IUserService _service;
-        public UserController()
+        public UserController(IUserService service)
         {
-            _service = new UserService();
+            _service = service;
         }
         [HttpGet]
         public async Task<ActionResult<UserGetAllResponse>> Get()

@@ -13,9 +13,9 @@ namespace ApiRaizes.Controllers
     public class RawMaterialStockController : ControllerBase
     {
         private IRawMaterialStockService _service;
-        public RawMaterialStockController()
+        public RawMaterialStockController(IRawMaterialStockService service)
         {
-            _service = new RawMaterialStockService();
+            _service = service;
         }
         [HttpGet]
         public async Task<ActionResult<RawMaterialStockGetAllResponse>> Get()

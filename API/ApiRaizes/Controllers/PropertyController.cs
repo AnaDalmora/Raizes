@@ -13,9 +13,9 @@ namespace ApiRaizes.Controllers
     public class PropertyController : ControllerBase
     {
         private IPropertyService _service;
-        public PropertyController()
+        public PropertyController(IPropertyService service)
         {
-            _service = new PropertyService();
+            _service = service;
         }
         [HttpGet]
         public async Task<ActionResult<PropertyGetAllResponse>> Get()

@@ -9,10 +9,10 @@ namespace ApiRaizes.Contracts.Repository
 
         Task<CityEntity> GetById(int id);
 
-        Task Insert(CityInsertDTO harvest);
+        Task Insert(CityInsertDTO city);
 
         Task Delete(int id);
 
-        Task Update(CityEntity harvest);
+        Task Update(CityEntity city);
     }
 }

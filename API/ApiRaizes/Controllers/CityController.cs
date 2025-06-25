@@ -14,9 +14,9 @@ namespace ApiRaizes.Controllers
     {
 
         private ICityService _service;
-        public CityController()
+        public CityController(ICityService service)
         {
-            _service = new CityService();
+            _service = service;
         }
         [HttpGet]
         public async Task<ActionResult<CityGetAllResponse>> Get()
