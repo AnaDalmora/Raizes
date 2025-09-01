@@ -21,6 +21,11 @@
   <style>
     /* Animação suave para expandir sidebar */
     .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      z-index: 50;
       transition: width 0.3s ease;
       width: 4rem; /* 16 */
       overflow-x: hidden;
@@ -40,6 +45,22 @@
       pointer-events: none;
       transition: opacity 0.3s ease, margin-left 0.3s ease;
       white-space: nowrap;
+    }
+
+    /* Added body margin to accommodate fixed sidebar */
+    body {
+      margin-left: 4rem;
+      transition: margin-left 0.3s ease;
+    }
+    
+    .sidebar:hover ~ .main-content,
+    .sidebar:hover ~ body {
+      margin-left: 16rem;
+    }
+
+    /* Alternative approach using CSS hover on body */
+    body:has(.sidebar:hover) {
+      margin-left: 16rem;
     }
   </style>
 </head>
@@ -96,11 +117,10 @@
         </svg>
         <span class="nav-text font-semibold">Relatórios</span>
       </a>
-        <a href="ai.html"class="flex items-center text-white hover:bg-white/10 rounded px-3 py-2 transition-colors w-full justify-start">
-        <img src="assets/assistente-de-ia.png" class="w-5 h-5 flex-shrink-0" alt="Estoque" />
+      <a href="ai.html"class="flex items-center text-white hover:bg-white/10 rounded px-3 py-2 transition-colors w-full justify-start">
+        <img src="assets/ia (2).png" class="w-5 h-5 flex-shrink-0" alt="Estoque" />
         <span class="nav-text font-semibold">IA</span>
       </a>
-      
     </nav>
 
     <!-- Separador -->
@@ -112,7 +132,8 @@
         <img src="assets/logo_perfil.png" alt="Profile" class="w-full h-full object-cover" />
       </div>
 
-      <button id="logout" class="flex items-center text-white hover:bg-white/10 rounded px-3 py-2 transition-colors w-full justify-start">
+      <button id="logout"
+        class="flex items-center text-white hover:bg-white/10 rounded px-3 py-2 transition-colors w-full justify-start">
         <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
@@ -120,9 +141,8 @@
         <span class="nav-text font-semibold">Logout</span>
       </button>
     </div>
-  </div>
 
-  <!--<script src="scripts/api.js"></script>-->
-
+    <script src="scripts/sidebar.js"></script>
+    <script src="scripts/api.js"></script>
 </body>
 </html>

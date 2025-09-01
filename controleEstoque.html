@@ -20,7 +20,11 @@
       }
     }
   </script>
-
+<style>
+  .sidebar{
+    position: fixed left-0 top-0 h-full;
+  }
+</style>
 </head>
 
 <body class="bg-gradient-to-br from-gray-50 to-gray-100 min-h-screen overflow-x-hidden">
@@ -30,67 +34,70 @@
     <div id="sidebar-container"></div>
 
     <!-- Modal para Novo Equipamento -->
-    <div id="modalEquipamento"
-      class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-      <div class="bg-white p-8 rounded-2xl w-full max-w-2xl shadow-2xl transform transition-all duration-300">
-        <div class="flex items-center justify-between mb-6">
-          <h2 class="text-2xl font-bold text-gray-800">Novo Equipamento</h2>
-        </div>
+<div id="modalEquipamento"
+  class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+  <!-- Reduzindo largura de max-w-2xl para max-w-lg e diminuindo padding -->
+  <div class="bg-white p-6 rounded-2xl w-full max-w-lg shadow-2xl transform transition-all duration-300">
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="text-xl font-bold text-gray-800">Novo Equipamento</h2>
+    </div>
 
-        <div class="grid grid-cols-1 gap-6 ">
-          <div class="space-y-4">
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-2">Nome</label>
-              <input id="nome"
-                class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-medium focus:border-transparent transition-all"
-                placeholder="Digite o nome do equipamento" />
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-2">Tipo</label>
-              <input id="tipo"
-                class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-medium focus:border-transparent transition-all"
-                placeholder="Digite o tipo do Equipamento" />
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-2">Descrição</label>
-              <textarea id="descricao"
-                class="w-full border border-gray-300 rounded-lg p-3 h-24 resize-none focus:ring-2 focus:ring-green-medium focus:border-transparent transition-all"
-                placeholder="Digite uma descrição para o equipamento"></textarea>
-            </div>
-            <div>
-              <label for="selectFornecedor" class="block text-gray-700 text-sm font-semibold mb-2">Fornecedor</label>
-              <select id="selectFornecedor"
-                class="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-green-light focus:border-transparent">
-                <option value="">Selecione o Fornecedor</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-2">Preço do Equipamento</label>
-              <input id="precoEquipamento"
-                class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-medium focus:border-transparent transition-all"
-                placeholder="Preço do Equipamento" />
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-2">Data de Compra</label>
-              <input id="dataCompra"
-                class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-medium focus:border-transparent transition-all"
-                placeholder="Data de Compra" />
-            </div>
-          </div>
-          <div id="messageEquipamento" class="text-center text-white bg-green-medium rounded-lg p-2 hidden"></div>
+    <!-- Reduzindo gap de 6 para 4 -->
+    <div class="grid grid-cols-1 gap-4">
+      <div class="space-y-3">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Nome</label>
+          <!-- Reduzindo padding de p-3 para p-2 -->
+          <input id="nome"
+            class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-green-medium focus:border-transparent transition-all"
+            placeholder="Digite o nome do equipamento" />
         </div>
-        <div class="flex justify-end space-x-3 mt-8">
-          <button onclick="fecharmodalEquipamento()"
-            class="px-6 py-3 text-gray-600 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors font-medium">Cancelar</button>
-          <button onclick="salvarEquipamento()"
-            class="px-6 py-3 bg-gradient-to-r from-green-dark to-green-medium text-white rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-medium">Salvar
-            Equipamento</button>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Tipo</label>
+          <input id="tipo"
+            class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-green-medium focus:border-transparent transition-all"
+            placeholder="Digite o tipo do Equipamento" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Descrição</label>
+          <!-- Reduzindo altura de h-24 para h-16 -->
+          <textarea id="descricao"
+            class="w-full border border-gray-300 rounded-lg p-2 h-16 resize-none focus:ring-2 focus:ring-green-medium focus:border-transparent transition-all"
+            placeholder="Digite uma descrição para o equipamento"></textarea>
+        </div>
+        <div>
+          <label for="selectFornecedor" class="block text-gray-700 text-sm font-semibold mb-1">Fornecedor</label>
+          <select id="selectFornecedor"
+            class="border border-gray-300 rounded-lg p-2 w-full focus:ring-2 focus:ring-green-light focus:border-transparent">
+            <option value="">Selecione o Fornecedor</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Preço do Equipamento</label>
+          <input id="precoEquipamento"
+            class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-green-medium focus:border-transparent transition-all"
+            placeholder="Preço do Equipamento" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Data de Compra</label>
+          <input id="dataCompra"
+            class="w-full border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-green-medium focus:border-transparent transition-all"
+            placeholder="Data de Compra" />
         </div>
       </div>
-
-
-
+      <div id="messageEquipamento" class="text-center text-white bg-green-medium rounded-lg p-2 hidden"></div>
     </div>
+    <!-- Reduzindo margin-top de mt-8 para mt-6 -->
+    <div class="flex justify-end space-x-3 mt-6">
+      <button onclick="fecharmodalEquipamento()"
+        class="px-4 py-2 text-gray-600 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors font-medium">Cancelar</button>
+      <button onclick="salvarEquipamento()"
+        class="px-4 py-2 bg-gradient-to-r from-green-dark to-green-medium text-white rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300 font-medium">Salvar
+        Equipamento</button>
+    </div>
+  </div>
+</div>
+
     <!-- Modal para Novo Insumo -->
     <div id="modalInsumo"
       class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4">
@@ -161,7 +168,7 @@
           <div class="flex items-center justify-between mb-4">
             <span class="text-gray-600 text-sm font-medium">Total Equipamentos</span>
             <div
-              class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+              class="w-12 h-12 bg-gradient-to-br from-green-light to-green-medium rounded-xl flex items-center justify-center shadow-lg">
               <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path
                   d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
@@ -179,7 +186,7 @@
           <div class="flex items-center justify-between mb-4">
             <span class="text-gray-600 text-sm font-medium">Valor Equipamentos</span>
             <div
-              class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
+              class="w-12 h-12 bg-gradient-to-br from-green-light to-green-medium rounded-xl flex items-center justify-center shadow-lg">
               <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M7 14l5-5 5 5z" />
               </svg>
@@ -188,7 +195,7 @@
           <div class="space-y-2">
             <div id="valorEquipamentos" class="text-3xl font-bold text-gray-800">Carregando..</div>
             <div class="flex items-center text-sm">
-              <span class="text-green-600 font-medium">Patrimônio total</span>
+              <span class="text-gray-600 font-medium">Patrimônio total</span>
             </div>
           </div>
         </div>
@@ -199,7 +206,7 @@
           <div class="flex items-center justify-between mb-4">
             <span class="text-gray-600 text-sm font-medium">Insumos</span>
             <div
-              class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+              class="w-12 h-12 bg-gradient-to-br from-green-light to-green-medium rounded-xl flex items-center justify-center shadow-lg">
               <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path
                   d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
@@ -209,7 +216,7 @@
           <div class="space-y-2">
             <div id="insumos" class="text-3xl font-bold text-gray-800">Carregando..</div>
             <div class="flex items-center text-sm">
-              <span class="text-purple-600 font-medium">Insumos ativos</span>
+              <span class="text-gray-600 font-medium">Insumos ativos</span>
             </div>
           </div>
         </div>
@@ -220,7 +227,7 @@
           <div class="flex items-center justify-between mb-4">
             <span class="text-gray-600 text-sm font-medium">Valor de Insumos em Estoque</span>
             <div
-              class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg">
+              class="w-12 h-12 bg-gradient-to-br from-green-light to-green-medium rounded-xl flex items-center justify-center shadow-lg">
               <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path
                   d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />

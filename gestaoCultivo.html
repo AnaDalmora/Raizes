@@ -20,94 +20,184 @@
       }
     }
   </script>
+<style>
+    .sidebar {
+      transition: width 0.3s ease;
+      width: 4rem;
+      overflow-x: hidden;
+    }
+    .sidebar:hover {
+      width: 16rem;
+    }
+    .sidebar:hover .nav-text {
+      opacity: 1;
+      margin-left: 1rem;
+      pointer-events: auto;
+    }
+    .nav-text {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease, margin-left 0.3s ease;
+      white-space: nowrap;
+    }
+    /* Troca de logo conforme expansão da sidebar */
+    .sidebar .logo-expandida {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .sidebar:hover .logo-expandida {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .sidebar .logo-retraida {
+      opacity: 1;
+    }
+    .sidebar:hover .logo-retraida {
+      opacity: 0;
+    }
+    /* Ajuste do conteúdo principal com sidebar expandida */
+    #main-content {
+      margin-left: 4rem;
+      transition: margin-left 0.3s ease;
+    }
+    body.sidebar-expanded #main-content {
+      margin-left: 16rem;
+    }
+
+    /* Mobile responsive adjustments */
+    @media (max-width: 768px) {
+      .sidebar {
+        position: fixed;
+        z-index: 50;
+        transform: translateX(-100%);
+        width: 16rem;
+        height: 100vh;
+      }
+      
+      .sidebar.mobile-open {
+        transform: translateX(0);
+      }
+      
+      #main-content {
+        margin-left: 0;
+      }
+      
+      body.sidebar-expanded #main-content {
+        margin-left: 0;
+      }
+      
+      .mobile-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 40;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+      
+      .mobile-overlay.active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    
+    /* Estilo para visualização de PDF */
+    .pdf-container {
+      width: 100%;
+      height: 70vh;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.5rem;
+      overflow: hidden;
+    }
+    
+    .pdf-viewer {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 
-<body class="bg-gray-50 min-h-screen overflow-x-hidden">
+<body class="bg-gray-100 min-h-screen overflow-x-hidden">
 
-  <!-- Modal para Novo Plantio -->
-  <div id="modalPlantio" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-    <div class="bg-white p-6 rounded-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl">
-      <h2 class="text-xl font-bold mb-6 text-gray-800">Novo Plantio</h2>
+  <div class="flex min-h-screen bg-white">
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-          <label for="selectEspecie" class="block text-gray-700 text-sm font-semibold mb-2">Espécie:</label>
-          <select id="selectEspecie"
-            class="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-green-light focus:border-transparent"
-            style="background-color: white; color: black;">
-            <option value="">Selecione a Espécie</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="selectPropriedade" class="block text-gray-700 text-sm font-semibold mb-2">Propriedade:</label>
-          <select id="selectPropriedade"
-            class="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-green-light focus:border-transparent">
-            <option value="">Selecione a Propriedade</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="inputDataInicio" class="block text-gray-700 text-sm font-semibold mb-2">Data de Início:</label>
-          <input type="date" id="inputDataInicio"
-            class="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-green-light focus:border-transparent" />
-        </div>
-
-        <div>
-          <label for="inputDataFim" class="block text-gray-700 text-sm font-semibold mb-2">Data de Fim:</label>
-          <input type="date" id="inputDataFim"
-            class="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-green-light focus:border-transparent" />
-        </div>
-
-        <div>
-          <label for="inputAreaPlantada" class="block text-gray-700 text-sm font-semibold mb-2">Área Plantada:</label>
-          <div class="flex gap-2">
-            <input type="number" step="0.01" id="inputAreaPlantada"
-              class="border border-gray-300 rounded-lg p-3 flex-grow focus:ring-2 focus:ring-green-light focus:border-transparent"
-              placeholder="Ex: 10.50" />
-            <select id="selectUnidadeMedida"
-              class="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-light focus:border-transparent">
-              <option value="">Un</option>
-            </select>
+    <div id="sidebar-container"></div>
+    <main id="main-content" class="flex-1 p-4 md:p-8 lg:p-12">
+      <div id="modalPlantio" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+        <div class="bg-white p-6 rounded-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl">
+          <h2 class="text-xl font-bold mb-6 text-gray-800">Novo Plantio</h2>
+    
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label for="selectEspecie" class="block text-gray-700 text-sm font-semibold mb-2">Espécie:</label>
+              <select id="selectEspecie"
+                class="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-green-light focus:border-transparent"
+                style="background-color: white; color: black;">
+                <option value="">Selecione a Espécie</option>
+              </select>
+            </div>
+    
+            <div>
+              <label for="selectPropriedade" class="block text-gray-700 text-sm font-semibold mb-2">Propriedade:</label>
+              <select id="selectPropriedade"
+                class="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-green-light focus:border-transparent">
+                <option value="">Selecione a Propriedade</option>
+              </select>
+            </div>
+    
+            <div>
+              <label for="inputDataInicio" class="block text-gray-700 text-sm font-semibold mb-2">Data de Início:</label>
+              <input type="date" id="inputDataInicio"
+                class="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-green-light focus:border-transparent" />
+            </div>
+    
+            <div>
+              <label for="inputDataFim" class="block text-gray-700 text-sm font-semibold mb-2">Data de Fim:</label>
+              <input type="date" id="inputDataFim"
+                class="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-green-light focus:border-transparent" />
+            </div>
+    
+            <div>
+              <label for="inputAreaPlantada" class="block text-gray-700 text-sm font-semibold mb-2">Área Plantada:</label>
+              <div class="flex gap-2">
+                <input type="number" step="0.01" id="inputAreaPlantada"
+                  class="border border-gray-300 rounded-lg p-3 flex-grow focus:ring-2 focus:ring-green-light focus:border-transparent"
+                  placeholder="Ex: 10.50" />
+                <select id="selectUnidadeMedida"
+                  class="border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-green-light focus:border-transparent">
+                  <option value="">Un</option>
+                </select>
+              </div>
+            </div>
+    
+            <div>
+              <label for="inputMudas" class="block text-gray-700 text-sm font-semibold mb-2">Quantidade de Mudas:</label>
+              <input type="number" id="inputMudas"
+                class="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-green-light focus:border-transparent"
+                placeholder="Ex: 500" />
+            </div>
+          </div>
+    
+          <div class="mt-4">
+            <label for="inputDescricao" class="block text-gray-700 text-sm font-semibold mb-2">Descrição:</label>
+            <textarea id="inputDescricao"
+              class="border border-gray-300 rounded-lg p-3 w-full h-24 resize-none focus:ring-2 focus:ring-green-light focus:border-transparent"
+              placeholder="Breve descrição do plantio"></textarea>
+          </div>
+    
+          <p id="mensagemPlantio" class="py-2 text-center"></p>
+    
+          <div class="flex justify-end gap-3 mt-6 pt-4 border-t border-gray-200">
+            <button onclick="fecharmodalPlantio()"
+              class="text-gray-600 px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors font-medium">Cancelar</button>
+            <button onclick="salvarPlantio()"
+              class="bg-green-dark text-white px-6 py-2 rounded-lg hover:bg-green-medium transition-colors font-medium">Salvar</button>
           </div>
         </div>
-
-        <div>
-          <label for="inputMudas" class="block text-gray-700 text-sm font-semibold mb-2">Quantidade de Mudas:</label>
-          <input type="number" id="inputMudas"
-            class="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-green-light focus:border-transparent"
-            placeholder="Ex: 500" />
-        </div>
       </div>
-
-      <div class="mt-4">
-        <label for="inputDescricao" class="block text-gray-700 text-sm font-semibold mb-2">Descrição:</label>
-        <textarea id="inputDescricao"
-          class="border border-gray-300 rounded-lg p-3 w-full h-24 resize-none focus:ring-2 focus:ring-green-light focus:border-transparent"
-          placeholder="Breve descrição do plantio"></textarea>
-      </div>
-
-      <p id="mensagemPlantio" class="py-2 text-center"></p>
-
-      <div class="flex justify-end gap-3 mt-6 pt-4 border-t border-gray-200">
-        <button onclick="fecharmodalPlantio()"
-          class="text-gray-600 px-6 py-2 rounded-lg hover:bg-gray-100 transition-colors font-medium">Cancelar</button>
-        <button onclick="salvarPlantio()"
-          class="bg-green-dark text-white px-6 py-2 rounded-lg hover:bg-green-medium transition-colors font-medium">Salvar</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="flex min-h-screen bg-gray-50">
-
-    <!-- Sidebar -->
-    <div id="sidebar-container"></div>
-
-    <!-- Conteúdo principal -->
-    <!-- Melhorado padding e espaçamento para ocupar melhor a tela -->
-    <div class="ml-16 flex-1 p-4 lg:p-8 max-w-full">
-
-      <!-- Header com botão -->
+    
       <div class="flex items-center justify-between mb-8">
         <div>
           <h1 class="text-2xl lg:text-3xl font-bold text-gray-800">Gestão de Cultivo</h1>
@@ -117,11 +207,9 @@
           + Adicionar Plantio
         </button>
       </div>
-
-      <!-- Cards de métricas -->
+    
       <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mb-10">
-
-        <!-- Colheitas Ativas -->
+    
         <div
           class="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-gray-100">
           <div class="flex items-center justify-between mb-4">
@@ -137,8 +225,7 @@
             </div>
           </div>
         </div>
-
-        <!-- Proximas Colheitas -->
+    
         <div
           class="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-gray-100">
           <div class="flex items-center justify-between mb-4">
@@ -155,8 +242,7 @@
             </div>
           </div>
         </div>
-
-        <!-- Area disponível -->
+    
         <div
           class="bg-white rounded-2xl p-6 shadow-lg transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border border-gray-100">
           <div class="flex items-center justify-between mb-4">
@@ -174,40 +260,31 @@
           </div>
         </div>
       </div>
-
-      <!-- Cultivos Atuais -->
+    
       <div class=" rounded-2xl p-6 shadow-lg border border-gray-100 overflow-x-auto">
-        <!--Filtros-->
         <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-6">
           <div>
             <h2 class="text-xl font-bold text-gray-800">Cultivos Atuais</h2>
-
+    
           </div>
           <div class="flex flex-col sm:flex-row gap-3">
-            <!-- <select class="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-green-light focus:border-transparent bg-white">
-              <option>Todas as espécies</option>
-            </select>
-            <select class="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-green-light focus:border-transparent bg-white">
-              <option>Todas as propriedades</option>
-            </select> -->
-          </div>
+            </div>
         </div>
-
-
+    
+    
         <div id="plant-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-6 
          max-h-[700px] overflow-y-auto pr-2">
-
-
+    
+    
         </div>
       </div>
-    </div>
+    </main>
   </div>
 
   <script src="scripts/api.js"></script>
   <script src="scripts/sidebar.js"></script>
   <script src="scripts/colheitasAtivas.js"></script>
   <script src="scripts/plantio.js"></script>
-
 </body>
 
 </html>
