@@ -141,8 +141,19 @@
         <span class="nav-text font-semibold">Logout</span>
       </button>
     </div>
+     <script>
+      <script>
+  document.getElementById("logout").addEventListener("click", function () {
+    // Limpa dados de autenticação (ajuste conforme o que você usa)
+    localStorage.clear();
+    sessionStorage.clear();
 
-    <script src="scripts/sidebar.js"></script>
+    // Redireciona para página de login
+    window.location.href = "index.html";
+  });
+</script>
+
+     </script>
     <script src="scripts/api.js"></script>
 </body>
 </html>

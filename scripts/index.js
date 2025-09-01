@@ -81,7 +81,7 @@
                 console.log('Response data:', data); // Debug log
                 
                 if (!response.ok) {
-                    throw new Error(data.message || `HTTP error! status: ${response.status}`);
+                    throw new Error(data.message || `https error! status: ${response.status}`);
                 }
                 
                 // Store token and user data
