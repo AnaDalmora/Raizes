@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="icon" type="image/png" href="assets/logo_perfil.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'green-dark': '#2d5016',
+                        'green-medium': '#4a7c59',
+                        'primary-green': '#31572C',
+                        'secondary-green': '#4D841D'
+                    }
+                }
+            }
+        }
+    </script>
+<!-- NAVBAR -->
+<nav id="mainNav" class="fixed top-0 left-0 w-full text-white py-3 md:py-5 bg-transparent transition-all duration-300 z-20">
+    <div class="container mx-auto px-4 md:px-6 flex items-center justify-between">
+        <!-- Logo - muda a cor ao scroll -->
+        <div class="flex-shrink-0">
+            <img id="navLogo" src="assets/logo.png" alt="Raízes" class="h-10 md:h-12">
+        </div>
+        
+        <!-- Menu centralizado - escondido em mobile -->
+    <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-4 lg:space-x-8 text-lg font-sans">
+      <a href="page.html" class="px-3 py-2 text-white transform transition-all duration-200 hover:scale-105 hover:font-bold nav-link">Home</a>
+      <a href="contato.html" class="px-3 py-2 text-white transform transition-all duration-200 hover:scale-105 hover:font-bold nav-link">Contato</a>
+    </div>
+        
+        <!-- Botão login - muda o estilo ao scroll -->
+        <a href="index.html" class="px-3 py-1 md:px-4 md:py-2 rounded border border-green-dark hover:bg-white hover:text-green-dark transition-all duration-300 font-semibold text-sm md:text-base nav-button">
+            LOGIN
+        </a>
+        
+        <!-- Menu mobile -->
+        <button class="md:hidden text-white focus:outline-none nav-hamburger">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+    
+    <!-- Menu mobile expandido - muda o fundo ao scroll -->
+    <div id="mobileMenu" class="md:hidden hidden bg-black bg-opacity-90 px-4 py-2 transition-all duration-300">
+        <a href="page.html" class="block py-2 hover:text-green-300 transition-colors nav-link">Home</a>
+        <a href="contato.html" class="block py-2 hover:text-green-300 transition-colors nav-link">Contato</a>
+    </div>
+</nav>
+<body class="bg-primary-green">
+  <!-- Hero Section -->
+    <section class="relative h-80 bg-primary-green flex items-center justify-center text-center text-white px-4 pt-[200px] pb-32">
+    <div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Entre em Contato</h1>
+        <p class="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+        Estamos disponíveis para atender suas necessidades e responder suas dúvidas sobre nossas soluções para o agronegócio.
+        </p>
+    </div>
+    </section>
+
+
+   <!-- Seção do vídeo com formulário de contato transparente -->
+<section class="relative w-full h-screen overflow-hidden flex items-center justify-center">
+  <!-- Vídeo de fundo -->
+  <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+    <source src="assets/videoHorta.mp4" type="video/mp4" />
+    Seu navegador não suporta o vídeo.
+  </video>
+  
+  <!-- Overlay escuro para melhorar contraste -->
+  <div class="absolute inset-0 bg-black bg-opacity-40 z-1"></div>
+  
+  <!-- Formulário transparente sobre o vídeo -->
+  <div class="relative z-10 text-white p-6 md:p-8 max-w-md mx-4 md:max-w-2xl w-full">
+    <h1 class="text-3xl md:text-4xl font-bold text-center mb-8 drop-shadow-lg">Fale conosco!</h1>
+
+    <form id="form-contato" class="space-y-6">
+      <!-- Nome -->
+      <div class="relative">
+        <input
+          type="text"
+          name="nome"
+          placeholder="Nome*"
+          required
+          class="w-full bg-white bg-opacity-20 backdrop-blur-sm border-0 border-b-2 border-white pb-2 text-white text-lg placeholder-white placeholder-opacity-70 focus:outline-none focus:border-green-300 transition-colors rounded-t px-2"
+        />
+      </div>
+
+      <!-- Telefone e Email -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="relative">
+          <input
+            type="tel"
+            name="telefone"
+            placeholder="Telefone*"
+            required
+            class="w-full bg-white bg-opacity-20 backdrop-blur-sm border-0 border-b-2 border-white pb-2 text-white text-lg placeholder-white placeholder-opacity-70 focus:outline-none focus:border-green-300 transition-colors rounded-t px-2"
+          />
+        </div>
+        <div class="relative">
+          <input
+            type="email"
+            name="email"
+            placeholder="E-mail*"
+            required
+            class="w-full bg-white bg-opacity-20 backdrop-blur-sm border-0 border-b-2 border-white pb-2 text-white text-lg placeholder-white placeholder-opacity-70 focus:outline-none focus:border-green-300 transition-colors rounded-t px-2"
+          />
+        </div>
+      </div>
+
+      <!-- Mensagem -->
+      <div class="relative">
+        <textarea
+          name="mensagem"
+          placeholder="Mensagem*"
+          rows="4"
+          required
+          class="w-full bg-white bg-opacity-20 backdrop-blur-sm border-0 border-b-2 border-white pb-2 text-white text-lg placeholder-white placeholder-opacity-70 focus:outline-none focus:border-green-300 transition-colors rounded-t px-2"
+        ></textarea>
+      </div>
+
+      <!-- Botão -->
+      <div class="pt-4 text-center">
+        <button
+          type="submit"
+          class="text-white font-bold px-8 py-3 rounded transition bg-secondary-green hover:bg-primary-green hover:border-opacity-100 shadow-lg"
+        >
+          ENVIAR MENSAGEM
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Rodapé -->
+<footer class="bg-primary-green text-white py-8 md:py-12">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <img src="assets/logo.png" alt="Raízes" class="h-12 mb-4">
+                <p class="text-white text-opacity-80">Tecnologia e inovação para o pequeno produtor rural.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="page.html" class="hover:text-green-300 transition">Home</a></li>
+                    <li><a href="#" class="hover:text-green-300 transition">Contato</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-4">Contato</h3>
+                <ul class="space-y-2">
+                    <li>raizes@raizes.com.br</li>
+                    <li>(47) 99999-9999</li>
+                    <li class="mt-4">
+                        <div class="flex space-x-4">
+                            <a href="#" class="hover:text-green-300 transition">FB</a>
+                            <a href="#" class="hover:text-green-300 transition">IG</a>
+                            <a href="#" class="hover:text-green-300 transition">YT</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-white border-opacity-20 mt-8 pt-8 text-center text-sm text-black text-opacity-70">
+            © 2025 Raízes. Todos os direitos reservados.
+        </div>
+    </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenuButton = document.querySelector('nav button.md\\:hidden');
+    const mobileMenu = document.querySelector('nav div.md\\:hidden.hidden');
+
+    // Abrir/fechar o menu mobile
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', function () {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Fechar o menu ao clicar em um item
+      const mobileMenuItems = mobileMenu.querySelectorAll('a');
+      mobileMenuItems.forEach(item => {
+        item.addEventListener('click', function () {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    }
+
+    // Validação e feedback do formulário
+    const form = document.getElementById('form-contato');
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Aqui você pode adicionar lógica de envio real (ex: fetch/AJAX)
+
+        // Exibir alerta de sucesso
+        Swal.fire({
+          title: "Mensagem enviada!",
+          text: "Entraremos em contato em breve.",
+          icon: "success",
+          confirmButtonText: "OK"
+        });
+
+        // Limpar formulário
+        form.reset();
+      });
+    }
+  });
+</script>
+</body>
+</html> 
